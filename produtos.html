@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos — BeeSide</title>
+<meta name="description" content="Catálogo BeeSide: tênis, roupas, acessórios, equipamentos, suplementos e mochilas para o seu esporte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-bar">
+    <input type="checkbox" id="searchToggle" class="search-toggle-input">
+    <div class="header-inner">
+
+      <a href="index.html" class="logo" aria-label="BeeSide — Início">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 35,11 35,29 20,38 5,29 5,11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <polygon points="20,12 27,16.5 27,25.5 20,30 13,25.5 13,16.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">BEE<strong>SIDE</strong></span>
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle-input">
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html" class="is-active" aria-current="page">Produtos</a></li>
+          <li><a href="centro-performance.html">Centro de Performance</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <form class="search-form" role="search" aria-label="Buscar produtos">
+          <input type="search" id="searchInput" placeholder="Busque por tênis, mochila..." aria-label="Buscar produtos">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+
+        <label class="icon-btn search-toggle" for="searchToggle" aria-label="Abrir busca">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </label>
+
+        <a href="#" class="icon-btn user-btn" aria-label="Entrar ou cadastrar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="user-btn-text">Entre e cadastre</span>
+        </a>
+
+        <a href="#" class="icon-btn cart-btn" aria-label="Carrinho de compras">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+          <span class="cart-count" id="cartCount">3</span>
+        </a>
+
+        <label class="icon-btn menu-toggle" for="navToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+
+    </div>
+    <div class="mobile-search" id="mobileSearch">
+      <input type="search" placeholder="Busque por tênis, mochila...">
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-header">
+  <div class="section-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Início</a> <span>/</span> <span>Produtos</span>
+    </nav>
+    <h1>Todos os produtos</h1>
+    <p>Estrutura pronta para receber a integração com o catálogo real do BeeSide. Os itens abaixo são exemplos de layout — basta substituir pelos dados vindos do seu sistema de produtos.</p>
+  </div>
+</section>
+
+<nav class="category-tabs" aria-label="Filtrar por categoria">
+  <ul>
+      <li><a href="#tenis">Tênis</a></li>
+      <li><a href="#roupas">Roupas</a></li>
+      <li><a href="#acessorios">Acessórios</a></li>
+      <li><a href="#equipamentos">Equipamentos</a></li>
+      <li><a href="#suplementos">Suplementos</a></li>
+      <li><a href="#mochilas">Mochilas</a></li>
+  </ul>
+</nav>
+
+<section class="product-section" id="tenis">
+  <div class="section-inner">
+    <div class="product-section-head">
+      <h2>Tênis</h2>
+      <span>3 produtos</span>
+    </div>
+    <div class="product-grid">
+      <article class="product-card" data-product-id="apex-runner-pro">
+        <div class="product-media">
+          <span class="product-badge">-15% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Tênis Apex Runner Pro" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=700&auto=format&fit=crop" alt="Tênis Apex Runner Pro">
+        </div>
+        <div class="product-info">
+          <span class="product-category">BeeSide Originals</span>
+          <h3 class="product-name">Tênis Apex Runner Pro</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 699,90</span>
+            <span class="price-new">R$ 599,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="court-flex">
+        <div class="product-media">
+          <span class="product-badge">-15% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Tênis Court Flex" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=700&auto=format&fit=crop" alt="Tênis Court Flex">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Tênis</span>
+          <h3 class="product-name">Tênis Court Flex</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 459,90</span>
+            <span class="price-new">R$ 389,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="trail-grip-x">
+        <div class="product-media">
+          <button class="fav-btn" aria-label="Favoritar Tênis Trail Grip X" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=700&auto=format&fit=crop" alt="Tênis Trail Grip X">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Tênis</span>
+          <h3 class="product-name">Tênis Trail Grip X</h3>
+          <div class="product-price">
+            <span class="price-new">R$ 549,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="product-section" id="roupas">
+  <div class="section-inner">
+    <div class="product-section-head">
+      <h2>Roupas</h2>
+      <span>3 produtos</span>
+    </div>
+    <div class="product-grid">
+      <article class="product-card" data-product-id="camiseta-neon-performance">
+        <div class="product-media">
+          <span class="product-badge">-20% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Camiseta Neon Performance" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=700&auto=format&fit=crop" alt="Camiseta Neon Performance">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Vestuário</span>
+          <h3 class="product-name">Camiseta Neon Performance</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 199,90</span>
+            <span class="price-new">R$ 159,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="shorts-compressao-pro">
+        <div class="product-media">
+          <span class="product-badge">-23% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Shorts Compressão Pro" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=700&auto=format&fit=crop" alt="Shorts Compressão Pro">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Vestuário</span>
+          <h3 class="product-name">Shorts Compressão Pro</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 129,90</span>
+            <span class="price-new">R$ 99,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="jaqueta-corta-vento-aura">
+        <div class="product-media">
+          <button class="fav-btn" aria-label="Favoritar Jaqueta Corta-Vento Aura" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=700&auto=format&fit=crop" alt="Jaqueta Corta-Vento Aura">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Vestuário</span>
+          <h3 class="product-name">Jaqueta Corta-Vento Aura</h3>
+          <div class="product-price">
+            <span class="price-new">R$ 349,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="product-section" id="acessorios">
+  <div class="section-inner">
+    <div class="product-section-head">
+      <h2>Acessórios</h2>
+      <span>3 produtos</span>
+    </div>
+    <div class="product-grid">
+      <article class="product-card" data-product-id="luvas-treino-grip">
+        <div class="product-media">
+          <span class="product-badge">-25% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Luvas de Treino Grip" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?q=80&w=700&auto=format&fit=crop" alt="Luvas de Treino Grip">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Acessórios</span>
+          <h3 class="product-name">Luvas de Treino Grip</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 79,90</span>
+            <span class="price-new">R$ 59,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="munhequeira-dupla-pro">
+        <div class="product-media">
+          <button class="fav-btn" aria-label="Favoritar Munhequeira Dupla Pro" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=700&auto=format&fit=crop" alt="Munhequeira Dupla Pro">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Acessórios</span>
+          <h3 class="product-name">Munhequeira Dupla Pro</h3>
+          <div class="product-price">
+            <span class="price-new">R$ 39,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="garrafa-hydra-1l">
+        <div class="product-media">
+          <span class="product-badge">-22% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Garrafa Térmica Hydra 1L" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=700&auto=format&fit=crop" alt="Garrafa Térmica Hydra 1L">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Acessórios</span>
+          <h3 class="product-name">Garrafa Térmica Hydra 1L</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 89,90</span>
+            <span class="price-new">R$ 69,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="product-section" id="equipamentos">
+  <div class="section-inner">
+    <div class="product-section-head">
+      <h2>Equipamentos</h2>
+      <span>3 produtos</span>
+    </div>
+    <div class="product-grid">
+      <article class="product-card" data-product-id="bola-court-elite">
+        <div class="product-media">
+          <span class="product-badge">-17% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Bola Pro Court Elite" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?q=80&w=700&auto=format&fit=crop" alt="Bola Pro Court Elite">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Basquete</span>
+          <h3 class="product-name">Bola Pro Court Elite</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 299,90</span>
+            <span class="price-new">R$ 249,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="bola-strike-match">
+        <div class="product-media">
+          <span class="product-badge">-15% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Bola de Futebol Strike Match" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1614632537197-38a17061c2bd?q=80&w=700&auto=format&fit=crop" alt="Bola de Futebol Strike Match">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Futebol</span>
+          <h3 class="product-name">Bola de Futebol Strike Match</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 259,90</span>
+            <span class="price-new">R$ 219,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="kit-elasticos-resistencia">
+        <div class="product-media">
+          <button class="fav-btn" aria-label="Favoritar Kit Elásticos de Resistência" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=700&auto=format&fit=crop" alt="Kit Elásticos de Resistência">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Equipamentos</span>
+          <h3 class="product-name">Kit Elásticos de Resistência</h3>
+          <div class="product-price">
+            <span class="price-new">R$ 119,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="product-section" id="suplementos">
+  <div class="section-inner">
+    <div class="product-section-head">
+      <h2>Suplementos</h2>
+      <span>3 produtos</span>
+    </div>
+    <div class="product-grid">
+      <article class="product-card" data-product-id="whey-protein-performance-900g">
+        <div class="product-media">
+          <span class="product-badge">-16% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Whey Protein BeeSide Performance 900g" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1579722820903-4e8f6c85b3b8?q=80&w=700&auto=format&fit=crop" alt="Whey Protein BeeSide Performance 900g">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Suplementos</span>
+          <h3 class="product-name">Whey Protein BeeSide Performance 900g</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 249,90</span>
+            <span class="price-new">R$ 209,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="creatina-monohidratada-300g">
+        <div class="product-media">
+          <button class="fav-btn" aria-label="Favoritar Creatina Monohidratada 300g" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1579722821273-0f6c1f176a10?q=80&w=700&auto=format&fit=crop" alt="Creatina Monohidratada 300g">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Suplementos</span>
+          <h3 class="product-name">Creatina Monohidratada 300g</h3>
+          <div class="product-price">
+            <span class="price-new">R$ 129,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="isotonico-hydra-fast">
+        <div class="product-media">
+          <span class="product-badge">-21% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Isotônico Hydra Fast 500ml" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=700&auto=format&fit=crop" alt="Isotônico Hydra Fast 500ml">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Suplementos</span>
+          <h3 class="product-name">Isotônico Hydra Fast 500ml</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 69,90</span>
+            <span class="price-new">R$ 54,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="product-section" id="mochilas">
+  <div class="section-inner">
+    <div class="product-section-head">
+      <h2>Mochilas</h2>
+      <span>2 produtos</span>
+    </div>
+    <div class="product-grid">
+      <article class="product-card" data-product-id="mochila-athlete-pack">
+        <div class="product-media">
+          <span class="product-badge">-18% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Mochila Athlete Pack" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1622560481156-01780990d8dc?q=80&w=700&auto=format&fit=crop" alt="Mochila Athlete Pack">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Acessórios</span>
+          <h3 class="product-name">Mochila Athlete Pack</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 399,90</span>
+            <span class="price-new">R$ 329,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="mochila-compact-trail">
+        <div class="product-media">
+          <button class="fav-btn" aria-label="Favoritar Mochila Compact Trail" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=700&auto=format&fit=crop" alt="Mochila Compact Trail">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Acessórios</span>
+          <h3 class="product-name">Mochila Compact Trail</h3>
+          <div class="product-price">
+            <span class="price-new">R$ 279,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer" id="contato">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 35,11 35,29 20,38 5,29 5,11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <polygon points="20,12 27,16.5 27,25.5 20,30 13,25.5 13,16.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">BEE<strong>SIDE</strong></span>
+      </a>
+      <p>O ecossistema esportivo que une equipamento de elite e evolução real: loja e Centro de Performance em um só lugar.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="centro-performance.html">Centro de Performance</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Categorias</h4>
+      <ul>
+        <li><a href="produtos.html?categoria=tenis">Tênis</a></li>
+        <li><a href="produtos.html?categoria=roupas">Roupas</a></li>
+        <li><a href="produtos.html?categoria=acessorios">Acessórios</a></li>
+        <li><a href="produtos.html?categoria=equipamentos">Equipamentos</a></li>
+        <li><a href="produtos.html?categoria=suplementos">Suplementos</a></li>
+        <li><a href="produtos.html?categoria=mochilas">Mochilas</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Centro de Performance</h4>
+      <ul>
+        <li><a href="centro-performance.html#avaliacao">Avaliação física</a></li>
+        <li><a href="centro-performance.html#treino">Treino personalizado</a></li>
+        <li><a href="centro-performance.html#alimentacao">Orientação alimentar</a></li>
+        <li><a href="centro-performance.html#evolucao">Acompanhamento</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="mailto:contato@beeside.com.br">contato@beeside.com.br</a></li>
+        <li><a href="tel:+5500000000000">(00) 0000-0000</a></li>
+        <li>Seg. a Sáb. — 8h às 20h</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-payments">
+    <span>Formas de pagamento:</span>
+    <div class="payment-badges">
+      <span>Pix</span><span>Visa</span><span>Mastercard</span><span>Boleto</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 BeeSide. Todos os direitos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>

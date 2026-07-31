@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BeeSide — Equipando o corpo, treinando a mente.</title>
+<meta name="description" content="BeeSide é o ecossistema esportivo que une loja de produtos esportivos com o Centro de Performance: treino, avaliação física e orientação alimentar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-bar">
+    <input type="checkbox" id="searchToggle" class="search-toggle-input">
+    <div class="header-inner">
+
+      <a href="index.html" class="logo" aria-label="BeeSide — Início">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 35,11 35,29 20,38 5,29 5,11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <polygon points="20,12 27,16.5 27,25.5 20,30 13,25.5 13,16.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">BEE<strong>SIDE</strong></span>
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle-input">
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="is-active" aria-current="page">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="centro-performance.html">Centro de Performance</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <form class="search-form" role="search" aria-label="Buscar produtos">
+          <input type="search" id="searchInput" placeholder="Busque por tênis, mochila..." aria-label="Buscar produtos">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+
+        <label class="icon-btn search-toggle" for="searchToggle" aria-label="Abrir busca">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </label>
+
+        <a href="#" class="icon-btn user-btn" aria-label="Entrar ou cadastrar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="user-btn-text">Entre e cadastre</span>
+        </a>
+
+        <a href="#" class="icon-btn cart-btn" aria-label="Carrinho de compras">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+          <span class="cart-count" id="cartCount">3</span>
+        </a>
+
+        <label class="icon-btn menu-toggle" for="navToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+
+    </div>
+    <div class="mobile-search" id="mobileSearch">
+      <input type="search" placeholder="Busque por tênis, mochila...">
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="hero-hexfield" aria-hidden="true"></div>
+  <div class="hero-inner">
+
+    <div class="hero-copy" data-reveal>
+      <span class="eyebrow">O ecossistema BeeSide</span>
+      <h1 class="hero-title">
+        EQUIPANDO O CORPO,<br>
+        <span class="accent">TREINANDO A MENTE.</span>
+      </h1>
+      <p class="hero-text">
+        O BeeSide reúne produtos esportivos, treinamento personalizado e
+        acompanhamento profissional para ajudar você a alcançar sua melhor versão.
+      </p>
+      <div class="hero-actions">
+        <a href="produtos.html" class="btn btn-primary">Explorar produtos</a>
+        <a href="centro-performance.html" class="btn btn-outline">Conhecer o centro de performance</a>
+      </div>
+
+      <dl class="hero-stats">
+        <div><dt>+120</dt><dd>Marcas parceiras</dd></div>
+        <div><dt>+40k</dt><dd>Atletas ativos</dd></div>
+        <div><dt>4.9</dt><dd>Avaliação média</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-visual" data-reveal>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1200&auto=format&fit=crop" alt="Atleta em treino de alta performance">
+        <span class="hero-tag">COLEÇÃO 01</span>
+      </div>
+    </div>
+
+  </div>
+  <a class="scroll-cue" href="#conceito" aria-label="Rolar para explorar">
+    <span class="scroll-line"></span> ROLE PARA EXPLORAR
+  </a>
+</section>
+
+<!-- ===================== CONCEITO ===================== -->
+<section class="concept" id="conceito">
+  <div class="section-inner">
+    <span class="eyebrow" data-reveal>Duas frentes, um só objetivo</span>
+    <h2 class="section-title" data-reveal>O ecossistema completo do atleta</h2>
+
+    <div class="concept-grid">
+      <article class="concept-card concept-card--store" data-reveal>
+        <div class="concept-media">
+          <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?q=80&w=1000&auto=format&fit=crop" alt="Prateleira com produtos esportivos BeeSide">
+        </div>
+        <div class="concept-content">
+          <h3>Loja esportiva</h3>
+          <p>Tudo o que você precisa para entrar em movimento: roupas, tênis, bolas, mochilas, acessórios, suplementos e equipamentos esportivos.</p>
+          <a href="produtos.html" class="link-arrow">Conhecer a loja <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="concept-card concept-card--performance" data-reveal>
+        <div class="concept-media">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1000&auto=format&fit=crop" alt="Avaliação física no Centro de Performance BeeSide">
+        </div>
+        <div class="concept-content">
+          <h3>Centro de Performance</h3>
+          <p>Avaliação física, planos de academia, orientação alimentar, treinos personalizados e acompanhamento da sua evolução.</p>
+          <a href="centro-performance.html" class="link-arrow">Conhecer os serviços <span>→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CATEGORIAS ===================== -->
+<section class="categories" id="categorias">
+  <div class="section-inner">
+    <span class="eyebrow" data-reveal>Navegue por categoria</span>
+    <h2 class="section-title" data-reveal>Encontre o que move você</h2>
+
+    <div class="category-grid" data-reveal>
+      <a href="produtos.html#tenis" class="category-card" data-category="tenis">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop" alt="Categoria Tênis">
+        <span class="category-name">Tênis</span>
+      </a>
+      <a href="produtos.html#roupas" class="category-card" data-category="roupas">
+        <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=600&auto=format&fit=crop" alt="Categoria Roupas">
+        <span class="category-name">Roupas</span>
+      </a>
+      <a href="produtos.html#acessorios" class="category-card" data-category="acessorios">
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?q=80&w=600&auto=format&fit=crop" alt="Categoria Acessórios">
+        <span class="category-name">Acessórios</span>
+      </a>
+      <a href="produtos.html#equipamentos" class="category-card" data-category="equipamentos">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=600&auto=format&fit=crop" alt="Categoria Equipamentos">
+        <span class="category-name">Equipamentos</span>
+      </a>
+      <a href="produtos.html#suplementos" class="category-card" data-category="suplementos">
+        <img src="https://images.unsplash.com/photo-1579722820903-4e8f6c85b3b8?q=80&w=600&auto=format&fit=crop" alt="Categoria Suplementos">
+        <span class="category-name">Suplementos</span>
+      </a>
+      <a href="produtos.html#mochilas" class="category-card" data-category="mochilas">
+        <img src="https://images.unsplash.com/photo-1622560481156-01780990d8dc?q=80&w=600&auto=format&fit=crop" alt="Categoria Mochilas">
+        <span class="category-name">Mochilas</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRODUTOS EM DESTAQUE ===================== -->
+<section class="products" id="produtos">
+  <div class="section-inner">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-reveal>Selecionados para você</span>
+        <h2 class="section-title" data-reveal>Destaques da colmeia</h2>
+      </div>
+      <a href="produtos.html" class="link-arrow" data-reveal>Ver todos os produtos <span>→</span></a>
+    </div>
+
+    <div class="product-grid" id="productGrid" data-reveal>
+      <!-- Estrutura preparada para receber dados dinâmicos do catálogo existente.
+           Enquanto a integração não está conectada, os cards abaixo servem de exemplo/fallback. -->
+      <article class="product-card" data-product-id="apex-runner-pro">
+        <div class="product-media">
+          <span class="product-badge">-15% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Tênis Apex Runner Pro" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=700&auto=format&fit=crop" alt="Tênis Apex Runner Pro">
+        </div>
+        <div class="product-info">
+          <span class="product-category">BeeSide Originals</span>
+          <h3 class="product-name">Tênis Apex Runner Pro</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 699,90</span>
+            <span class="price-new">R$ 599,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="bola-court-elite">
+        <div class="product-media">
+          <span class="product-badge">-17% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Bola Pro Court Elite" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?q=80&w=700&auto=format&fit=crop" alt="Bola Pro Court Elite">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Basquete</span>
+          <h3 class="product-name">Bola Pro Court Elite</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 299,90</span>
+            <span class="price-new">R$ 249,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="mochila-athlete-pack">
+        <div class="product-media">
+          <span class="product-badge">-18% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Mochila Athlete Pack" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1622560481156-01780990d8dc?q=80&w=700&auto=format&fit=crop" alt="Mochila Athlete Pack">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Acessórios</span>
+          <h3 class="product-name">Mochila Athlete Pack</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 399,90</span>
+            <span class="price-new">R$ 329,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-product-id="camiseta-neon-performance">
+        <div class="product-media">
+          <span class="product-badge">-20% OFF</span>
+          <button class="fav-btn" aria-label="Favoritar Camiseta Neon Performance" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.8C.8 8 2 4.5 5.5 4c2-.3 3.7.7 4.5 2.2C10.8 4.7 12.5 3.7 14.5 4c3.5.5 4.7 4 3 7.2C19 15.6 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </button>
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=700&auto=format&fit=crop" alt="Camiseta Neon Performance">
+        </div>
+        <div class="product-info">
+          <span class="product-category">Vestuário</span>
+          <h3 class="product-name">Camiseta Neon Performance</h3>
+          <div class="product-price">
+            <span class="price-old">R$ 199,90</span>
+            <span class="price-new">R$ 159,90</span>
+          </div>
+          <button class="btn btn-add">Adicionar ao carrinho</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PERFORMANCE ===================== -->
+<section class="performance" id="performance">
+  <div class="performance-bg">
+    <img src="https://images.unsplash.com/photo-1517964603305-4ebc10a3c936?q=80&w=1600&auto=format&fit=crop" alt="Treino de performance no BeeSide">
+  </div>
+  <div class="performance-inner">
+    <span class="eyebrow" data-reveal>Centro de Performance</span>
+    <h2 class="performance-title" data-reveal>
+      MAIS QUE EQUIPAMENTO.<br><span class="accent">EVOLUÇÃO DE VERDADE.</span>
+    </h2>
+    <p class="performance-text" data-reveal>
+      No BeeSide, você encontra profissionais, estrutura e acompanhamento
+      para transformar seus objetivos em resultados.
+    </p>
+
+    <ul class="performance-list" data-reveal>
+      <li><span class="num">01</span>Avaliação física</li>
+      <li><span class="num">02</span>Treino personalizado</li>
+      <li><span class="num">03</span>Orientação alimentar</li>
+      <li><span class="num">04</span>Acompanhamento da evolução</li>
+    </ul>
+
+    <a href="centro-performance.html" class="btn btn-primary" data-reveal>Quero começar minha evolução</a>
+  </div>
+</section>
+
+<!-- ===================== BENEFÍCIOS ===================== -->
+<section class="benefits" id="beneficios">
+  <div class="section-inner">
+    <div class="benefits-grid">
+      <div class="benefit" data-reveal>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Produtos selecionados</h3>
+      </div>
+      <div class="benefit" data-reveal>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 7v5l3 3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <h3>Atendimento especializado</h3>
+      </div>
+      <div class="benefit" data-reveal>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+        <h3>Compra segura</h3>
+      </div>
+      <div class="benefit" data-reveal>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <h3>Acompanhamento profissional</h3>
+      </div>
+      <div class="benefit" data-reveal>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h13l-3-3m3 3l-3 3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6h2.5L21 9v6h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        <h3>Entrega rápida</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CHAMADA FINAL ===================== -->
+<section class="final-cta" id="sobre">
+  <div class="hero-hexfield hero-hexfield--light" aria-hidden="true"></div>
+  <div class="final-cta-inner" data-reveal>
+    <h2>SEU ESPORTE. <span class="accent">SEU ESTILO.</span> SUA EVOLUÇÃO.</h2>
+    <a href="produtos.html" class="btn btn-primary btn-lg">Começar agora</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer" id="contato">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 35,11 35,29 20,38 5,29 5,11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <polygon points="20,12 27,16.5 27,25.5 20,30 13,25.5 13,16.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">BEE<strong>SIDE</strong></span>
+      </a>
+      <p>O ecossistema esportivo que une equipamento de elite e evolução real: loja e Centro de Performance em um só lugar.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="centro-performance.html">Centro de Performance</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Categorias</h4>
+      <ul>
+        <li><a href="produtos.html#tenis">Tênis</a></li>
+        <li><a href="produtos.html#roupas">Roupas</a></li>
+        <li><a href="produtos.html#acessorios">Acessórios</a></li>
+        <li><a href="produtos.html#equipamentos">Equipamentos</a></li>
+        <li><a href="produtos.html#suplementos">Suplementos</a></li>
+        <li><a href="produtos.html#mochilas">Mochilas</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Centro de Performance</h4>
+      <ul>
+        <li><a href="centro-performance.html#avaliacao">Avaliação física</a></li>
+        <li><a href="centro-performance.html#treino">Treino personalizado</a></li>
+        <li><a href="centro-performance.html#alimentacao">Orientação alimentar</a></li>
+        <li><a href="centro-performance.html#evolucao">Acompanhamento</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="mailto:contato@beeside.com.br">contato@beeside.com.br</a></li>
+        <li><a href="tel:+5500000000000">(00) 0000-0000</a></li>
+        <li>Seg. a Sáb. — 8h às 20h</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-payments">
+    <span>Formas de pagamento:</span>
+    <div class="payment-badges">
+      <span>Pix</span><span>Visa</span><span>Mastercard</span><span>Boleto</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 BeeSide. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+</body>
+</html>

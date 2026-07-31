@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre nós — BeeSide</title>
+<meta name="description" content="Conheça a história, a missão e os valores do BeeSide, o ecossistema esportivo que une loja e Centro de Performance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-bar">
+    <input type="checkbox" id="searchToggle" class="search-toggle-input">
+    <div class="header-inner">
+
+      <a href="index.html" class="logo" aria-label="BeeSide — Início">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 35,11 35,29 20,38 5,29 5,11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <polygon points="20,12 27,16.5 27,25.5 20,30 13,25.5 13,16.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">BEE<strong>SIDE</strong></span>
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle-input">
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="centro-performance.html">Centro de Performance</a></li>
+          <li><a href="sobre.html" class="is-active" aria-current="page">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <form class="search-form" role="search" aria-label="Buscar produtos">
+          <input type="search" id="searchInput" placeholder="Busque por tênis, mochila..." aria-label="Buscar produtos">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+
+        <label class="icon-btn search-toggle" for="searchToggle" aria-label="Abrir busca">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </label>
+
+        <a href="#" class="icon-btn user-btn" aria-label="Entrar ou cadastrar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="user-btn-text">Entre e cadastre</span>
+        </a>
+
+        <a href="#" class="icon-btn cart-btn" aria-label="Carrinho de compras">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+          <span class="cart-count" id="cartCount">3</span>
+        </a>
+
+        <label class="icon-btn menu-toggle" for="navToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+
+    </div>
+    <div class="mobile-search" id="mobileSearch">
+      <input type="search" placeholder="Busque por tênis, mochila...">
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-placeholder">
+  <div class="hero-hexfield" aria-hidden="true"></div>
+  <div class="page-placeholder-inner">
+    <span class="eyebrow">Sobre o BeeSide</span>
+    <h1>Nossa história</h1>
+    <p>Espaço reservado para a apresentação da marca: missão, valores, bastidores e a equipe por trás do BeeSide.</p>
+    <span class="page-placeholder-note">Página preparada · conteúdo a adicionar</span>
+  </div>
+</section>
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer" id="contato">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 35,11 35,29 20,38 5,29 5,11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <polygon points="20,12 27,16.5 27,25.5 20,30 13,25.5 13,16.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">BEE<strong>SIDE</strong></span>
+      </a>
+      <p>O ecossistema esportivo que une equipamento de elite e evolução real: loja e Centro de Performance em um só lugar.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="centro-performance.html">Centro de Performance</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Categorias</h4>
+      <ul>
+        <li><a href="produtos.html?categoria=tenis">Tênis</a></li>
+        <li><a href="produtos.html?categoria=roupas">Roupas</a></li>
+        <li><a href="produtos.html?categoria=acessorios">Acessórios</a></li>
+        <li><a href="produtos.html?categoria=equipamentos">Equipamentos</a></li>
+        <li><a href="produtos.html?categoria=suplementos">Suplementos</a></li>
+        <li><a href="produtos.html?categoria=mochilas">Mochilas</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Centro de Performance</h4>
+      <ul>
+        <li><a href="centro-performance.html#avaliacao">Avaliação física</a></li>
+        <li><a href="centro-performance.html#treino">Treino personalizado</a></li>
+        <li><a href="centro-performance.html#alimentacao">Orientação alimentar</a></li>
+        <li><a href="centro-performance.html#evolucao">Acompanhamento</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="mailto:contato@beeside.com.br">contato@beeside.com.br</a></li>
+        <li><a href="tel:+5500000000000">(00) 0000-0000</a></li>
+        <li>Seg. a Sáb. — 8h às 20h</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-payments">
+    <span>Formas de pagamento:</span>
+    <div class="payment-badges">
+      <span>Pix</span><span>Visa</span><span>Mastercard</span><span>Boleto</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 BeeSide. Todos os direitos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>
