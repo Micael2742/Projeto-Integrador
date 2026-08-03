@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre nós — BeeSide</title>
+<meta name="description" content="Conheça a história, o propósito e a equipe do BeeSide, o ecossistema esportivo criado em Uberlândia para incentivar evolução, saúde e qualidade de vida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- ===================== CABEÇALHO DA PÁGINA ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-bar">
+    <input type="checkbox" id="searchToggle" class="search-toggle-input">
+    <div class="header-inner">
+
+      <a href="index.html" class="logo" aria-label="BeeSide — Início">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 35,11 35,29 20,38 5,29 5,11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <polygon points="20,12 27,16.5 27,25.5 20,30 13,25.5 13,16.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">BEE<strong>SIDE</strong></span>
+      </a>
+
+      <input type="checkbox" id="navToggle" class="nav-toggle-input">
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="centro-performance.html">Centro de Performance</a></li>
+          <li><a href="sobre.html" class="is-active" aria-current="page">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <form class="search-form" role="search" aria-label="Buscar produtos">
+          <input type="search" id="searchInput" placeholder="Busque por tênis, mochila..." aria-label="Buscar produtos">
+          <button type="submit" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+
+        <label class="icon-btn search-toggle" for="searchToggle" aria-label="Abrir busca">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </label>
+
+        <a href="login.html" class="icon-btn user-btn" aria-label="Entrar ou cadastrar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="user-btn-text">Entre e cadastre</span>
+        </a>
+
+        <a href="carrinho.html" class="icon-btn cart-btn" aria-label="Carrinho de compras">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L21 8H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+          <span class="cart-count" id="cartCount">3</span>
+        </a>
+
+        <label class="icon-btn menu-toggle" for="navToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+
+    </div>
+    <div class="mobile-search" id="mobileSearch">
+      <input type="search" placeholder="Busque por tênis, mochila...">
+    </div>
+  </div>
+</header>
+
+<main class="about-page">
+<!-- ===================== SEÇÃO PRINCIPAL ===================== -->
+<section class="about-hero" aria-labelledby="aboutHeroTitle">
+  <div class="hero-hexfield" aria-hidden="true"></div>
+  <div class="about-hero-inner">
+    <div class="about-hero-copy" data-reveal>
+      <span class="eyebrow">Sobre o BeeSide</span>
+      <h1 id="aboutHeroTitle">NÃO VENDEMOS APENAS PRODUTOS. INCENTIVAMOS EVOLUÇÕES.</h1>
+      <p>O BeeSide nasceu em Uberlândia com um objetivo claro: tornar a prática esportiva mais acessível, incentivar hábitos saudáveis e ajudar cada pessoa a encontrar sua própria forma de evoluir. Unimos equipamentos, vestuário, treinamento e acompanhamento para que cuidar do corpo também seja uma experiência de motivação, confiança e qualidade de vida.</p>
+    </div>
+
+    <div class="about-hero-visual" data-reveal>
+      <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1400&auto=format&fit=crop" alt="Grupo diverso de pessoas praticando exercícios físicos em diferentes ritmos">
+      <div class="about-hero-badge" aria-hidden="true">UBERLÂNDIA EM MOVIMENTO</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HISTÓRIA DO BEESIDE ===================== -->
+<section class="about-story" aria-labelledby="storyTitle">
+  <div class="section-inner about-story-grid">
+    <div class="about-section-heading" data-reveal>
+      <span class="eyebrow">Nossa história</span>
+      <h2 id="storyTitle" class="section-title">COMO TUDO COMEÇOU</h2>
+    </div>
+    <div class="about-story-text" data-reveal>
+      <p>O BeeSide surgiu a partir da visão de cinco jovens que acreditam no poder do esporte para transformar vidas. Observando o crescimento de Uberlândia e a necessidade de incentivar uma rotina mais ativa, percebemos que poderíamos criar algo que fosse além de uma loja convencional.</p>
+      <p>Nossa ideia foi reunir, em um único ambiente, produtos esportivos, equipamentos, treinamento personalizado, avaliação física, orientação alimentar e acompanhamento da evolução. Dessa forma, cada pessoa pode encontrar o suporte necessário para começar, continuar ou aprimorar sua jornada.</p>
+      <p>Queremos ajudar as pessoas a cuidarem do corpo de maneira responsável, respeitando seus limites e construindo resultados consistentes. Mais do que buscar uma aparência específica, acreditamos em movimento, saúde, autoestima, disposição e qualidade de vida.</p>
+      <strong>Equipando o corpo, treinando a mente e acompanhando cada evolução.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CARDS DE MISSÃO, VISÃO E VALORES ===================== -->
+<section class="about-purpose" aria-labelledby="purposeTitle">
+  <div class="section-inner">
+    <div class="about-section-heading about-section-heading--center" data-reveal>
+      <span class="eyebrow">Nosso propósito</span>
+      <h2 id="purposeTitle" class="section-title">O QUE GUIA O BEESIDE</h2>
+    </div>
+
+    <div class="purpose-grid">
+      <article class="purpose-card" data-reveal>
+        <span class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.7-7-11a7 7 0 0 1 14 0c0 6.3-7 11-7 11Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 10.5 11.2 13 15.5 8.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>MISSÃO</h3>
+        <p>Incentivar a prática esportiva e oferecer produtos, serviços e acompanhamento que contribuam para uma vida mais ativa, saudável e equilibrada.</p>
+      </article>
+
+      <article class="purpose-card" data-reveal>
+        <span class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <h3>VISÃO</h3>
+        <p>Tornar o BeeSide uma referência em esporte, saúde e performance em Uberlândia, acompanhando pessoas de diferentes níveis em suas jornadas de evolução.</p>
+      </article>
+
+      <article class="purpose-card" data-reveal>
+        <span class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3 4.5 7.5v9L12 21l7.5-4.5v-9L12 3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 12h7M12 8.5v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <h3>VALORES</h3>
+        <ul>
+          <li>Saúde e qualidade de vida;</li>
+          <li>Respeito aos limites individuais;</li>
+          <li>Inclusão e acessibilidade;</li>
+          <li>Responsabilidade;</li>
+          <li>Evolução contínua;</li>
+          <li>Atendimento humano;</li>
+          <li>Compromisso com resultados saudáveis.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DADOS DE UBERLÂNDIA ===================== -->
+<section class="about-city" aria-labelledby="cityTitle">
+  <div class="section-inner">
+    <div class="about-city-head" data-reveal>
+      <span class="eyebrow">Contexto local</span>
+      <h2 id="cityTitle" class="section-title">UBERLÂNDIA EM MOVIMENTO</h2>
+      <p>Uberlândia possuía uma população estimada de 761.835 habitantes em 2025, segundo o IBGE. Em 2026, a cidade apareceu em destaque nacional no indicador de menores índices de obesidade infantil, considerando crianças menores de 5 anos acompanhadas pelo Sistema de Vigilância Alimentar e Nutricional — Sisvan.</p>
+    </div>
+
+    <div class="city-stat-grid">
+      <article class="city-stat-card" data-reveal>
+        <span>MAIS DE</span>
+        <strong>761 MIL HABITANTES</strong>
+        <p>População estimada de Uberlândia em 2025, segundo o IBGE.</p>
+      </article>
+      <article class="city-stat-card" data-reveal>
+        <span>INDICADOR DE OBESIDADE INFANTIL</span>
+        <strong>18ª POSIÇÃO NO BRASIL</strong>
+        <p>Posição nacional entre municípios com menores índices no indicador.</p>
+      </article>
+      <article class="city-stat-card" data-reveal>
+        <span>INDICADOR DE OBESIDADE INFANTIL</span>
+        <strong>3ª POSIÇÃO EM MINAS GERAIS</strong>
+        <p>Posição estadual entre municípios com menores índices no indicador.</p>
+      </article>
+    </div>
+
+    <div class="about-city-content" data-reveal>
+      <p>A cidade também ficou na 14ª posição na região Sudeste nesse indicador. O município desenvolve ações relacionadas à alimentação saudável, prática de atividade física, educação nutricional e melhoria da qualidade de vida.</p>
+      <p>Esses resultados demonstram que Uberlândia já reconhece a importância da prevenção e da promoção da saúde. O BeeSide quer contribuir para que esse movimento continue crescendo, oferecendo incentivo, estrutura e acompanhamento para pessoas que desejam incluir a atividade física em suas vidas.</p>
+      <p class="about-note">Os serviços do BeeSide têm finalidade esportiva, educativa e de promoção de hábitos saudáveis. Avaliações, orientações alimentares e acompanhamentos devem ser realizados por profissionais devidamente habilitados.</p>
+      <div class="about-sources" aria-label="Fontes dos dados apresentados">
+        <span>Fontes:</span>
+        <a href="https://www.ibge.gov.br/cidades-e-estados/mg/uberlandia.html" target="_blank" rel="noopener">IBGE — População estimada de Uberlândia em 2025</a>
+        <a href="https://www.uberlandia.mg.gov.br/2026/03/30/uberlandia-esta-entre-as-20-cidades-do-brasil-com-menores-indices-de-obesidade-infantil/" target="_blank" rel="noopener">Prefeitura de Uberlândia e Sisvan — Indicador de obesidade infantil, divulgado em março de 2026</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CARDS DA EQUIPE ===================== -->
+<section class="about-team" aria-labelledby="teamTitle">
+  <div class="section-inner">
+    <div class="about-section-heading about-section-heading--center" data-reveal>
+      <span class="eyebrow">Equipe</span>
+      <h2 id="teamTitle" class="section-title">QUEM FAZ O BEESIDE ACONTECER</h2>
+      <p>Por trás do BeeSide existe uma equipe que acredita na inovação, no esporte e na capacidade de transformar boas ideias em experiências que melhorem a vida das pessoas.</p>
+    </div>
+
+    <div class="team-grid">
+      <article class="team-card" data-reveal>
+        <div class="team-photo">
+          <img src="assets/sobre/Melhor-que-o-rafp.jpeg" alt="Foto de Eduardo Castelhano">
+        </div>
+        <div class="team-info">
+          <h3>Eduardo Castelhano</h3>
+          <p>Função no projeto: Front-end</p>
+        </div>
+      </article>
+
+      <article class="team-card" data-reveal>
+        <div class="team-photo team-photo--empty" aria-hidden="true">Foto</div>
+        <div class="team-info">
+          <h3>Michael</h3>
+          <p>Função no projeto: Backend</p>
+        </div>
+      </article>
+
+      <article class="team-card" data-reveal>
+        <div class="team-photo team-photo--empty" aria-hidden="true">Foto</div>
+        <div class="team-info">
+          <h3>Davi</h3>
+          <p>Função no projeto: Backend</p>
+        </div>
+      </article>
+
+      <article class="team-card" data-reveal>
+        <div class="team-photo team-photo--empty" aria-hidden="true">Foto</div>
+        <div class="team-info">
+          <h3>Rafael</h3>
+          <p>Função no projeto: Backend</p>
+        </div>
+      </article>
+
+      <article class="team-card" data-reveal>
+        <div class="team-photo team-photo--empty" aria-hidden="true">Foto</div>
+        <div class="team-info">
+          <h3>Richard</h3>
+          <p>Função no projeto: Backend</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CHAMADA FINAL ===================== -->
+<section class="about-final-cta" aria-labelledby="aboutCtaTitle">
+  <div class="hero-hexfield hero-hexfield--light" aria-hidden="true"></div>
+  <div class="about-final-cta-inner" data-reveal>
+    <h2 id="aboutCtaTitle">CADA EVOLUÇÃO COMEÇA COM UM PRIMEIRO PASSO.</h2>
+    <p>Não importa se você está começando agora ou buscando melhorar seu desempenho. O BeeSide quer estar ao seu lado durante essa jornada.</p>
+    <div class="about-cta-actions">
+      <a href="produtos.html" class="btn btn-primary">Conhecer nossos produtos</a>
+      <a href="#contato-sobre" class="btn btn-outline">Falar com nossa equipe</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INFORMAÇÕES DE CONTATO E FORMULÁRIO ===================== -->
+<section class="about-contact" id="contato-sobre" aria-labelledby="contactTitle">
+  <div class="section-inner about-contact-grid">
+    <div class="about-contact-info" data-reveal>
+      <span class="eyebrow">Contato</span>
+      <h2 id="contactTitle" class="section-title">FALE COM O BEESIDE</h2>
+      <p>Campos preparados para edição quando os canais oficiais forem definidos.</p>
+
+      <ul class="contact-list">
+        <li>
+          <span>WhatsApp principal</span>
+          <!-- ALTERE AQUI O NÚMERO PRINCIPAL DO WHATSAPP -->
+          <a href="https://wa.me/5534900000000" target="_blank" rel="noopener">(34) 9XXXX-XXXX</a>
+        </li>
+        <li>
+          <span>Telefone comercial</span>
+          <!-- ALTERE AQUI O TELEFONE COMERCIAL -->
+          <a href="tel:+553400000000">(34) XXXX-XXXX</a>
+        </li>
+        <li>
+          <span>Segundo telefone</span>
+          <!-- ALTERE AQUI O SEGUNDO TELEFONE -->
+          <a href="tel:+5534900000000">(34) 9XXXX-XXXX</a>
+        </li>
+        <li>
+          <span>E-mail</span>
+          <!-- ALTERE AQUI O E-MAIL DE CONTATO -->
+          <a href="mailto:contato@beeside.com.br">contato@beeside.com.br</a>
+        </li>
+        <li>
+          <span>Instagram</span>
+          <!-- ALTERE AQUI O INSTAGRAM OFICIAL -->
+          <a href="https://www.instagram.com/beeside" target="_blank" rel="noopener">@beeside</a>
+        </li>
+        <li>
+          <span>Localização</span>
+          <!-- ALTERE AQUI O ENDEREÇO OU BAIRRO, SE NECESSÁRIO -->
+          <p>Uberlândia – Minas Gerais</p>
+        </li>
+      </ul>
+    </div>
+
+    <form class="about-contact-form" data-reveal>
+      <!-- Integração futura: conectar este formulário a um backend, serviço de e-mail ou fluxo de WhatsApp quando os dados oficiais estiverem prontos. -->
+      <div class="form-row">
+        <label for="contactName">Nome</label>
+        <input type="text" id="contactName" name="nome" autocomplete="name" required>
+      </div>
+      <div class="form-row">
+        <label for="contactEmail">E-mail</label>
+        <input type="email" id="contactEmail" name="email" autocomplete="email" required>
+      </div>
+      <div class="form-row">
+        <label for="contactPhone">Telefone</label>
+        <input type="tel" id="contactPhone" name="telefone" autocomplete="tel">
+      </div>
+      <div class="form-row">
+        <label for="contactSubject">Assunto</label>
+        <input type="text" id="contactSubject" name="assunto" required>
+      </div>
+      <div class="form-row">
+        <label for="contactMessage">Mensagem</label>
+        <textarea id="contactMessage" name="mensagem" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      <p class="form-feedback" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer" id="contato">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <polygon points="20,2 35,11 35,29 20,38 5,29 5,11" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <polygon points="20,12 27,16.5 27,25.5 20,30 13,25.5 13,16.5" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">BEE<strong>SIDE</strong></span>
+      </a>
+      <p>O ecossistema esportivo que une equipamento de elite e evolução real: loja e Centro de Performance em um só lugar.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="centro-performance.html">Centro de Performance</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Categorias</h4>
+      <ul>
+        <li><a href="produtos.html?categoria=tenis">Tênis</a></li>
+        <li><a href="produtos.html?categoria=roupas">Roupas</a></li>
+        <li><a href="produtos.html?categoria=acessorios">Acessórios</a></li>
+        <li><a href="produtos.html?categoria=equipamentos">Equipamentos</a></li>
+        <li><a href="produtos.html?categoria=suplementos">Suplementos</a></li>
+        <li><a href="produtos.html?categoria=mochilas">Mochilas</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Centro de Performance</h4>
+      <ul>
+        <li><a href="centro-performance.html#avaliacao">Avaliação física</a></li>
+        <li><a href="centro-performance.html#treino">Treino personalizado</a></li>
+        <li><a href="centro-performance.html#alimentacao">Orientação alimentar</a></li>
+        <li><a href="centro-performance.html#evolucao">Acompanhamento</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="mailto:contato@beeside.com.br">contato@beeside.com.br</a></li>
+        <li><a href="tel:+5500000000000">(00) 0000-0000</a></li>
+        <li>Seg. a Sáb. — 8h às 20h</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-payments">
+    <span>Formas de pagamento:</span>
+    <div class="payment-badges">
+      <span>Pix</span><span>Visa</span><span>Mastercard</span><span>Boleto</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 BeeSide. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
