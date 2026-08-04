@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <!-- ===================== CABEÇALHO DA PÁGINA ===================== -->
@@ -48,54 +48,7 @@
 
     <div class="cart-layout">
       <div class="cart-items" data-reveal>
-        <!-- Integração futura: renderizar os itens reais do carrinho a partir do backend ou localStorage. -->
-        <article class="cart-item" data-price="599.90">
-          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=500&auto=format&fit=crop" alt="Tênis Apex Runner Pro">
-          <div class="cart-item-info">
-            <span>BeeSide Originals</span>
-            <h2>Tênis Apex Runner Pro</h2>
-            <p>Tamanho: 40</p>
-            <strong>R$ 599,90</strong>
-          </div>
-          <div class="cart-quantity" aria-label="Quantidade do produto">
-            <button type="button" class="cart-qty-btn" data-cart-action="minus" aria-label="Diminuir quantidade">−</button>
-            <input type="number" value="1" min="1" aria-label="Quantidade">
-            <button type="button" class="cart-qty-btn" data-cart-action="plus" aria-label="Aumentar quantidade">+</button>
-          </div>
-          <button type="button" class="cart-remove" data-cart-action="remove">Remover</button>
-        </article>
-
-        <article class="cart-item" data-price="249.90">
-          <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?q=80&w=500&auto=format&fit=crop" alt="Bola Pro Court Elite">
-          <div class="cart-item-info">
-            <span>Basquete</span>
-            <h2>Bola Pro Court Elite</h2>
-            <p>Modelo: padrão</p>
-            <strong>R$ 249,90</strong>
-          </div>
-          <div class="cart-quantity" aria-label="Quantidade do produto">
-            <button type="button" class="cart-qty-btn" data-cart-action="minus" aria-label="Diminuir quantidade">−</button>
-            <input type="number" value="1" min="1" aria-label="Quantidade">
-            <button type="button" class="cart-qty-btn" data-cart-action="plus" aria-label="Aumentar quantidade">+</button>
-          </div>
-          <button type="button" class="cart-remove" data-cart-action="remove">Remover</button>
-        </article>
-
-        <article class="cart-item" data-price="329.90">
-          <img src="https://images.unsplash.com/photo-1622560481156-01780990d8dc?q=80&w=500&auto=format&fit=crop" alt="Mochila Athlete Pack">
-          <div class="cart-item-info">
-            <span>Acessórios</span>
-            <h2>Mochila Athlete Pack</h2>
-            <p>Cor: preta</p>
-            <strong>R$ 329,90</strong>
-          </div>
-          <div class="cart-quantity" aria-label="Quantidade do produto">
-            <button type="button" class="cart-qty-btn" data-cart-action="minus" aria-label="Diminuir quantidade">−</button>
-            <input type="number" value="1" min="1" aria-label="Quantidade">
-            <button type="button" class="cart-qty-btn" data-cart-action="plus" aria-label="Aumentar quantidade">+</button>
-          </div>
-          <button type="button" class="cart-remove" data-cart-action="remove">Remover</button>
-        </article>
+        <!-- Preenchido dinamicamente pelo js/carrinho.js a partir do localStorage -->
       </div>
 
       <aside class="cart-summary" data-reveal>
@@ -144,6 +97,10 @@
   <div class="footer-payments"><span>Formas de pagamento:</span><div class="payment-badges"><span>Pix</span><span>Visa</span><span>Mastercard</span><span>Boleto</span></div></div>
   <div class="footer-bottom"><p>© 2026 BeeSide. Todos os direitos reservados.</p></div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/header.js"></script>
+<script src="js/carrinho.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
